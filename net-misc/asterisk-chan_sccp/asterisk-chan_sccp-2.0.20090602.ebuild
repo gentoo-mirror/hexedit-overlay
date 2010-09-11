@@ -4,7 +4,7 @@
 
 inherit eutils
 
-IUSE="park pickup dirtrfr conference realtime direct-rtp manager-events debug-sccp-indications debug"
+IUSE="+park +pickup +dirtrfr conference +realtime direct-rtp +manager indications debug"
 
 MY_PV="${PV/2.0./}"
 MY_P="chan_sccp-b_${MY_PV}"
@@ -43,8 +43,8 @@ src_unpack() {
 	fix_yn conference CONFERENCE
 	fix_yn realtime realtime
 	fix_yn direct-rtp "Direct RTP"
-	fix_yn manager-events "manager events"
-	fix_yn debug-sccp-indications "Debug SCCP indications"
+	fix_yn manager "manager events"
+	fix_yn indications "Debug SCCP indications"
 }
 
 src_compile() {
