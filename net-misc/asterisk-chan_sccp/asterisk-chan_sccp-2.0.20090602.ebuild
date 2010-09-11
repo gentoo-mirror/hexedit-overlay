@@ -6,12 +6,12 @@ inherit eutils
 
 IUSE="park pickup dirtrfr conference realtime direct-rtp manager-events debug-sccp-indications debug"
 
-MY_PV="${PV/0.0./}"
+MY_PV="${PV/2.0./}"
 MY_P="chan_sccp-b_${MY_PV}"
 
 DESCRIPTION="SCCP channel plugin for the Asterisk soft PBX"
 HOMEPAGE="http://chan-sccp-b.sourceforge.net"
-SRC_URI="http://sunet.dl.sourceforge.net/project/chan-sccp-b/chan-sccp-b/v2-based_${MY_PV}/${MY_P}.tar.gz"
+SRC_URI="http://freefr.dl.sourceforge.net/project/chan-sccp-b/V2/Chan_SCCP-2.0_Final.tar.gz"
 
 S="${WORKDIR}/${MY_P}/"
 
