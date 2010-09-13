@@ -4,6 +4,8 @@
 
 inherit eutils
 
+EAPI="2"
+
 IUSE="+park +pickup +dirtrfr conference +realtime direct-rtp +manager indications debug"
 
 MY_PV="${PV/2.0./}"
