@@ -50,6 +50,12 @@ src_compile() {
 src_install() {
 	emake DESTDIR="${D}" install || die "install failed."
 
+	# install configs
+	einfo "Installing default config files..."
+	mkdir -p ${D}etc/asterisk
+	find ${S}/conf/ -name '.svn' -print0 | xargs -0 rm -rf # cleaning svn files
+	cp -rf ${S}/conf/* ${D}etc/asterisk
+
 	# fix permissions
 	if [[ -n "$(egetent group asterisk)" ]]; then
 		einfo "Fixing permissions..."
