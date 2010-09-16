@@ -4,7 +4,7 @@
 
 EAPI=2
 
-MY_PV="3.0_RC1"
+MY_PV=$(echo ${PV} | tr '[:lower:]' '[:upper:]')
 MY_P="Chan_SCCP-${MY_PV}"
 S="${WORKDIR}/${MY_P}/"
 
