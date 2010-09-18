@@ -6,7 +6,7 @@ inherit subversion
 
 EAPI=2
 
-DESCRIPTION="HTTP GUI interface for asterisk"
+DESCRIPTION="HTTP(S) GUI interface for Asterisk"
 HOMEPAGE="http://www.asterisk.org"
 
 LICENSE="GPL-2"
@@ -35,4 +35,11 @@ src_compile() {
 
 src_install() {
 	emake DESTDIR="${D}" install || die "install failed."
+
+	#fixing permissions
+	if [ -n $(egetent passwd asterisk) ]; then
+		einfo "Fixing permissions..."
+		chown -R asterisk.asterisk ${D}etc/asterisk ${D}var/lib/asterisk
+		chmod -R u=rwX,g=rX,o= ${D}etc/asterisk ${D}var/lib/asterisk
+	fi
 }
