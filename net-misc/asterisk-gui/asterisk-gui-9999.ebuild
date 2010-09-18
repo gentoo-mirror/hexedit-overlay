@@ -6,7 +6,7 @@ inherit subversion
 
 EAPI=2
 
-DESCRIPTION="HTTP(S) GUI interface for Asterisk"
+DESCRIPTION="Official HTTP(S) GUI interface for the Asterisk soft PBX"
 HOMEPAGE="http://www.asterisk.org"
 
 LICENSE="GPL-2"
