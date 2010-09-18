@@ -18,7 +18,7 @@ SRC_URI="http://freefr.dl.sourceforge.net/project/chan-sccp-b/V2/Chan_SCCP-2.0_F
 S="${WORKDIR}/${MY_P}/"
 
 SLOT="0"
-KEYWORDS="~ppc ~x86 ~amd64"
+KEYWORDS="ppc x86 amd64"
 LICENSE="GPL-2"
 
 DEPEND=">=net-misc/asterisk-1.0.5-r2"
