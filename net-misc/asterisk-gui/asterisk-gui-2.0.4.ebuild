@@ -2,24 +2,20 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-inherit subversion
-
 EAPI=2
 
 DESCRIPTION="An official HTTP(S) GUI interface for the Asterisk soft PBX"
 HOMEPAGE="http://www.asterisk.org"
+SRC_URI="http://downloads.asterisk.org/pub/telephony/asterisk-gui/releases/asterisk-gui-${PV}.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS=""
+KEYWORDS="~x86 ~amd64 ~ppc"
 IUSE=""
 
 DEPEND="
 	>=net-misc/asterisk-1.2
 "
-
-ESVN_REPO_URI="http://svn.digium.com/svn/asterisk-gui/branches/2.0"
-ESVN_PROJECT="asterisk-gui"
 
 src_configure() {
 	econf\
