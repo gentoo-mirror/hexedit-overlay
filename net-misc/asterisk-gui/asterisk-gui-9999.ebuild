@@ -52,7 +52,7 @@ pkg_postinst() {
 	elog "--- http.conf ---"
 	elog "  enabled = yes"
 	elog "  enablestatic = yes"
-	elog "  redirect = / /static/config/index.html"
+	elog "  redirect = / /static/config/cfgbasic.html"
 	elog "and create appropriate entry in manager.conf for the administrative user"
 	ewarn "PLEASE READ THE security.txt FILE!"
 	elog "  [admin]"
