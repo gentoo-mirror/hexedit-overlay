@@ -10,7 +10,7 @@ SRC_URI="http://downloads.asterisk.org/pub/telephony/asterisk-gui/releases/aster
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="x86 amd64 ppc"
+KEYWORDS="~x86 ~amd64 ~ppc"
 IUSE=""
 
 DEPEND="
