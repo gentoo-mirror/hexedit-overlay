@@ -15,7 +15,7 @@ SRC_URI="http://freefr.dl.sourceforge.net/project/chan-sccp-b/V3/Chan_SCCP-${MY_
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~ppc ~x86 ~amd64"
-IUSE="+pickup +park +dirtrfr +monitor conference +manager +functions indications +realtime advanced-functions dynamic-speeddial debug static"
+IUSE="+pickup +park +dirtrfr +monitor conference +manager +functions indications +realtime video advanced-functions dynamic-config dynamic-speeddial debug static"
 
 DEPEND="
 	>=net-misc/asterisk-1.2
@@ -38,6 +38,8 @@ src_configure() {
 		$(use_with functions)\
 		$(use_with indications)\
 		$(use_with realtime)\
+		$(use_with video)\
+		$(use_with advanced-config)\
 		$(use_with advanced-functions)\
 		$(use_with dynamic-speeddial)\
 	|| die "configure failed."
