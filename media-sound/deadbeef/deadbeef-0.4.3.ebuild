@@ -44,7 +44,7 @@ RDEPEND="${DEPEND}"
 src_configure() {
 	econf\
 		$(use_enable nls)\
-		$(use_enable threads threads posix)\
+		$(use_enable threads threads pth)\
 		$(use_enable gtk gtkui)\
 		$(use_enable alsa)\
 		$(use_enable oss)\
