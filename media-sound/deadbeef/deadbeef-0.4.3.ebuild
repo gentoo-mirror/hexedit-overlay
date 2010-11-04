@@ -17,6 +17,7 @@ ffmpeg flac sndfile wavpack cdda aac mms ao"
 DEPEND="
 	media-libs/libsamplerate
 	nls? ( dev-util/intltool )
+	threads? ( dev-libs/pth )
 	gtk? ( >=x11-libs/gtk+-2.12 )
 	alsa? ( media-libs/alsa-lib )
 	pulse? ( media-sound/pulseaudio )
