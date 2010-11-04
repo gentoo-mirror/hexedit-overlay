@@ -10,7 +10,7 @@ S="${WORKDIR}/${MY_P}/"
 
 DESCRIPTION="SCCP channel plugin for the Asterisk soft PBX"
 HOMEPAGE="http://chan-sccp-b.sourceforge.net"
-SRC_URI="http://freefr.dl.sourceforge.net/project/chan-sccp-b/V3/Chan_SCCP-${MY_PV}.tar.gz"
+SRC_URI="http://sourceforge.net/projects/chan-sccp-b/files/V3/Chan_SCCP-${MY_PV}.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0"
