@@ -31,7 +31,3 @@
 
 #--- END OF EXAMPLES ---
 
-# Timofey Negrebetsky <hexedit@ifproject.ru> (11 Nov 2010)
-# Masked for removal in 7 days. Source tarball
-# removed from hosting.
-=www-apps/poweradmin-2.1.3
