@@ -25,7 +25,6 @@ DEPEND="
 	notify? ( sys-apps/dbus )
 	curl? ( net-misc/curl )
 	lastfm? ( >=net-misc/curl-7.10 )
-	albumart? ( net-misc/curl )
 	mad? ( media-libs/libmad )
 	vorbis? (
 		media-libs/libvorbis
