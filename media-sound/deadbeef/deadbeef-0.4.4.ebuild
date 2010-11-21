@@ -13,7 +13,7 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86 ~ppc"
 IUSE="nls threads rpath nullout alsa oss pulse gtk +curl lastfm +albumart
 +supereq sid mad ape vtx adplug +hotkeys vorbis ffmpeg flac sndfile wavpack cdda gme
-dumb +notify +shellexec musepack wildmidi tta dts aac mmc shn ao"
+dumb +notify +shellexec musepack wildmidi tta dts aac mms shn ao"
 
 DEPEND="
 	media-libs/libsamplerate
