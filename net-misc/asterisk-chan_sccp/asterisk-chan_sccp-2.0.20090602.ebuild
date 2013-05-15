@@ -2,9 +2,9 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: /var/cvsroot/gentoo-x86/net-misc/asterisk-chan_sccp/asterisk-chan_sccp-0.0.20060204.ebuild,v 1.2 2007/01/06 16:46:23 drizzt Exp $
 
-inherit eutils
-
 EAPI="2"
+
+inherit eutils
 
 IUSE="+park +pickup +dirtrfr conference +realtime direct-rtp +manager indications debug"
 

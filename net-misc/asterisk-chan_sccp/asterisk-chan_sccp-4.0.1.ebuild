@@ -5,20 +5,21 @@
 EAPI=2
 
 MY_PV=$(echo ${PV} | tr '[:lower:]' '[:upper:]')
-MY_P="Chan_SCCP-${MY_PV}"
+MY_P="Chan_SCCP-${MY_PV}_STABLE"
 S="${WORKDIR}/${MY_P}/"
 
 DESCRIPTION="SCCP channel plugin for the Asterisk soft PBX"
 HOMEPAGE="http://chan-sccp-b.sourceforge.net"
-SRC_URI="http://sourceforge.net/projects/chan-sccp-b/files/V3/Chan_SCCP-${MY_PV}.tar.gz"
+SRC_URI="http://sourceforge.net/projects/chan-sccp-b/files/V4/Chan_SCCP-${MY_PV}_STABLE.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~ppc ~x86 ~amd64"
+KEYWORDS="ppc x86 amd64"
 IUSE="+pickup +park +dirtrfr +monitor conference +manager +functions indications +realtime video advanced-functions dynamic-config dynamic-speeddial debug static"
 
 DEPEND="
 	>=net-misc/asterisk-1.2
+	<net-misc/asterisk-1.8
 	>=sys-devel/autoconf-2.6.0
 	>=sys-devel/automake-1.10
 	>=sys-devel/libtool-2.2.2
