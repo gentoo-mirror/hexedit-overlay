@@ -2,9 +2,9 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-inherit subversion
-
 EAPI=2
+
+inherit subversion
 
 DESCRIPTION="SCCP channel plugin for the Asterisk soft PBX"
 HOMEPAGE="http://chan-sccp-b.sourceforge.net"
