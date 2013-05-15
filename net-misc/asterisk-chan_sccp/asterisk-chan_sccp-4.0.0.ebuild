@@ -18,8 +18,8 @@ KEYWORDS="ppc x86 amd64"
 IUSE="+pickup +park +dirtrfr +monitor conference +manager +functions indications +realtime video advanced-functions dynamic-config dynamic-speeddial debug static"
 
 DEPEND="
-	>=net-misc/asterisk-1.2
-	<net-misc/asterisk-1.8
+	>=net-misc/asterisk-1.6.2
+	<net-misc/asterisk-11.0
 	>=sys-devel/autoconf-2.6.0
 	>=sys-devel/automake-1.10
 	>=sys-devel/libtool-2.2.2
