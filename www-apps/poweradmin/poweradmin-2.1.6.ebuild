@@ -8,7 +8,7 @@ inherit webapp
 
 DESCRIPTION="A friendly web-based DNS administration tool for PowerDNS"
 HOMEPAGE="https://www.poweradmin.org"
-SRC_URI="https://www.poweradmin.org/download/${P}.tgz"
+SRC_URI="https://github.com/downloads/poweradmin/poweradmin/${P}.tgz"
 
 LICENSE="GPL-3"
 KEYWORDS="~x86 ~amd64"
