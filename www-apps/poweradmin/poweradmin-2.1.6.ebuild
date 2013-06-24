@@ -12,10 +12,10 @@ SRC_URI="https://github.com/downloads/poweradmin/poweradmin/${P}.tgz"
 
 LICENSE="GPL-3"
 KEYWORDS="~x86 ~amd64"
-IUSE="+mysql postgres"
+IUSE="mysql postgres"
 
 DEPEND=""
-RDEPEND="virtual/php
+RDEPEND="dev-lang/php
 	dev-php/PEAR-MDB2
 	mysql? ( dev-php/PEAR-MDB2_Driver_mysql )
 	postgres? ( dev-php/PEAR-MDB2_Driver_pgsql )
