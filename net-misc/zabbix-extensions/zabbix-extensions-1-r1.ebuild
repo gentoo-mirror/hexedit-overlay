@@ -24,11 +24,11 @@ for name in $HWRAID; do
 done
 
 DEPEND=">=net-analyzer/zabbix-2.0.0
-		pgbouncer? ( dev-db/postgresql-base )
-		postgres? ( dev-db/postgresql-base )
+		pgbouncer? ( dev-db/postgresql )
+		postgres? ( dev-db/postgresql )
 		redis? ( dev-db/redis )
 		sphinx2? ( dev-db/mysql )
-		skytools? ( dev-db/postgresql-base )
+		skytools? ( dev-db/postgresql )
 		hwraid_smartarray? ( sys-block/hpacucli )
 		unicorn? ( net-misc/curl )"
 RDEPEND="${DEPEND}"
