@@ -71,30 +71,12 @@ src_install() {
 
 	if use postfix; then 
 		insinto /etc/zabbix/zabbix_agentd.d
-	    doins "files/postfix/postfix.conf"
+	    doins "files/postfix/userparameter_postfix.conf"
 	fi
 
 	if use postgres; then
 		insinto /etc/zabbix/zabbix_agentd.d
 		doins "files/postgresql/postgresql.conf"
-		insinto /usr/libexec/zabbix-extensions/scripts/
-		doins \
-			"files/postgresql/scripts/pgsql.autovacuum.freeze.sh" \
-			"files/postgresql/scripts/pgsql.buffercache.sh" \
-			"files/postgresql/scripts/pgsql.connections.sh" \
-			"files/postgresql/scripts/pgsql.db.discovery.sh" \
-			"files/postgresql/scripts/pgsql.db.size.sh" \
-			"files/postgresql/scripts/pgsql.dbstat.sh" \
-			"files/postgresql/scripts/pgsql.indexes.size.sh" \
-			"files/postgresql/scripts/pgsql.ping.sh" \
-			"files/postgresql/scripts/pgsql.relation.size.sh" \
-			"files/postgresql/scripts/pgsql.relation.stat.sh" \
-			"files/postgresql/scripts/pgsql.relation.tuples.sh" \
-			"files/postgresql/scripts/pgsql.streaming.lag.sh" \
-			"files/postgresql/scripts/pgsql.transactions.sh" \
-			"files/postgresql/scripts/pgsql.uptime.sh" \
-			"files/postgresql/scripts/pgsql.trigger.sh" \
-			"files/postgresql/scripts/pgsql.wal.write.sh"
 	fi
 
 	if use glusterfs-client; then
