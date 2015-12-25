@@ -3,18 +3,17 @@
 # $Header: $
 
 EAPI=5
-inherit eutils
+inherit eutils git-2
 
 DESCRIPTION="Zabbix additional monitoring modules"
 HOMEPAGE="https://github.com/lesovsky/zabbix-extensions"
-ZBX_EXT_GIT_SHA1="131fef3"
-ZBX_EXT_GIT_URI="https://github.com/lesovsky/zabbix-extensions/tarball/${ZBX_EXT_GIT_SHA1}"
-SRC_URI="${ZBX_EXT_GIT_URI} -> ${P}.tar.gz"
-S="${WORKDIR}/lesovsky-zabbix-extensions-${ZBX_EXT_GIT_SHA1}"
+
+EGIT_REPO_URI="https://github.com/lesovsky/zabbix-extensions.git"
+EGIT_PROJECT="zabbix-extensions"
 
 LICENSE="as-is"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS=""
 IUSE="flashcache glusterfs-client memcached pgbouncer postfix postgres redis sphinx2 skytools unicorn"
 
 HWRAID="adaptec smartarray megacli"
