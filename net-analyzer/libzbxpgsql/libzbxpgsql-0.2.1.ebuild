@@ -16,7 +16,7 @@ KEYWORDS="~x86 ~amd64"
 IUSE=""
 
 DEPEND="
-	>=net-analyzer/zabbix-2.2
+	>=net-analyzer/zabbix-2.2[agent]
 	>=dev-db/postgresql-8.1
 "
 RDEPEND="${DEPEND}"
@@ -33,4 +33,15 @@ src_install() {
 	dodir "${ROOT}${CONFDIR}"
 	insinto "${ROOT}${CONFDIR}"
 	doins "${FILESDIR}/libzbxpgsql.conf"
+}
+
+pkg_postinst() {
+	elog
+	elog "libzbxpgsql successfully installed."
+	ewarn
+	ewarn "You need to restart zabbix-agentd to apply changes"
+	ewarn "You might also need to add a line"
+	ewarn "\tInclude=/etc/zabbix/zabbix_agentd.d/"
+	ewarn "to your zabbix_agentd.conf to instruct zabbix-agentd to parse additional configuration files."
+	ewarn
 }
