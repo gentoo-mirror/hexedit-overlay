@@ -4,6 +4,8 @@
 
 EAPI=5
 
+inherit eutils
+
 DESCRIPTION="A comprehensive PostgreSQL discovery and monitoring module for the Zabbix monitoring agent"
 HOMEPAGE="http://cavaliercoder.com/libzbxpgsql/"
 SRC_URI="http://sourceforge.net/projects/libzbxpgsl/files/sources/libzbxpgsql-${PV}.tar.gz"
@@ -20,6 +22,10 @@ DEPEND="
 RDEPEND="${DEPEND}"
 
 CONFDIR=/etc/zabbix/zabbix_agentd.d
+
+src_configure() {
+	econf --libdir=/usr/$(get_libdir)/modules
+}
 
 src_install() {
 	emake DESTDIR="${D}" install || "install failed"
