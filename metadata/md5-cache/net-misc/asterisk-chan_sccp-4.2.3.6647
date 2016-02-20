@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst
+DEPEND=>=net-misc/asterisk-1.6.2 <net-misc/asterisk-11.0 >=sys-devel/autoconf-2.6.0 >=sys-devel/automake-1.10 >=sys-devel/libtool-2.2.2 >=sys-devel/m4-1.4.5
+DESCRIPTION=SCCP channel plugin for the Asterisk soft PBX
+EAPI=2
+HOMEPAGE=http://chan-sccp-b.sourceforge.net
+IUSE=+pickup +park +dirtrfr +monitor conference +manager +functions indications +realtime video advanced-functions dynamic-config dynamic-speeddial debug static
+KEYWORDS=ppc x86 amd64
+LICENSE=GPL-2
+RDEPEND=>=net-misc/asterisk-1.6.2 <net-misc/asterisk-11.0 >=sys-devel/autoconf-2.6.0 >=sys-devel/automake-1.10 >=sys-devel/libtool-2.2.2 >=sys-devel/m4-1.4.5
+SLOT=0
+SRC_URI=http://sourceforge.net/projects/chan-sccp-b/files/V4/Chan_SCCP-4.2.3_STABLE_r6647.tar.gz
+_eclass_exported_funcs=pkg_postinst:- src_configure:- src_compile:- src_install:-
+_md5_=5c85e8b6bab3b2b1f1b07f8d9343bd47
