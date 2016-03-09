@@ -6,7 +6,7 @@ EAPI=5
 
 DESCRIPTION="Zabbix Agent extensions"
 HOMEPAGE="https://www.ifproject.ru/project/zabbix-agent-extensions.html"
-SRC_URI="https://redmine.ifproject.ru/attachments/download/9/zabbix-agent-extensions-${PV}.tar.xz"
+SRC_URI="https://redmine.ifproject.ru/attachments/download/18/zabbix-agent-extensions-${PV}.tar.xz"
 
 LICENSE="GPL-3"
 SLOT="0"
