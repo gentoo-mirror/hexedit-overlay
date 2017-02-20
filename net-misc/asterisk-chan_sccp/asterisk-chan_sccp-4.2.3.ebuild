@@ -4,20 +4,17 @@
 
 EAPI=2
 
-MY_PV=${PV%.*}
-MY_PB=${PV##*.}
-MY_PV="${MY_PV}_STABLE_r${MY_PB}"
-MY_P="Chan_SCCP-${MY_PV}"
-S="${WORKDIR}/${MY_P}/"
+MY_P="chan-sccp-${PV}"
 
 DESCRIPTION="SCCP channel plugin for the Asterisk soft PBX"
 HOMEPAGE="http://chan-sccp-b.sourceforge.net"
-SRC_URI="http://sourceforge.net/projects/chan-sccp-b/files/V4/Chan_SCCP-${MY_PV}.tar.gz"
+SRC_URI="https://github.com/chan-sccp/chan-sccp/archive/v${PV}.tar.gz -> ${MY_P}.tar.gz"
+S="${WORKDIR}/${MY_P}"
 
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="ppc x86 amd64"
-IUSE="+pickup +park +dirtrfr +monitor conference +manager +functions indications +realtime video advanced-functions dynamic-config dynamic-speeddial debug static"
+IUSE="+pickup +park +dirtrfr +monitor conference +manager +functions indications +realtime video advanced-config advanced-functions dynamic-config dynamic-speeddial debug static"
 
 DEPEND="
 	>=net-misc/asterisk-1.6.2
