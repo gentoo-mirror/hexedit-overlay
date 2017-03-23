@@ -4,7 +4,7 @@
 
 EAPI="2"
 
-inherit webapp eutils confutils depend.php
+inherit webapp eutils confutils
 
 DESCRIPTION="A friendly web-based DNS administration tool for PowerDNS"
 HOMEPAGE="http://www.poweradmin.org"
@@ -22,7 +22,6 @@ RDEPEND="dev-lang/php[session,postgres?,crypt]
 	sys-devel/gettext"
 
 need_httpd_cgi
-need_php_httpd
 
 pkg_setup() {
 	webapp_pkg_setup
