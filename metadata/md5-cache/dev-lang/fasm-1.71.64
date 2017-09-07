@@ -8,5 +8,4 @@ LICENSE=fasm
 RDEPEND=amd64? ( app-emulation/emul-linux-x86-baselibs )
 SLOT=0
 SRC_URI=http://flatassembler.net/fasm-1.71.64.tgz
-_eclass_exported_funcs=src_install:-
 _md5_=8998843080dba61cb6039d21c58d1498
