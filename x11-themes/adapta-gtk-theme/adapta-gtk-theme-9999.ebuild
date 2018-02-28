@@ -10,7 +10,7 @@ HOMEPAGE="https://github.com/adapta-project/adapta-gtk-theme"
 SRC_URI=""
 EGIT_REPO_URI="https://github.com/adapta-project/adapta-gtk-theme.git"
 
-LICENSE="CC-BY-SA-4.0"
+LICENSE="GPL-2 CC-BY-SA-4.0"
 SLOT="0"
 KEYWORDS=""
 IUSE="gnome gnome-flashback cinnamon xfce mate openbox plank telegram gtk-next gtk-legacy chrome-legacy +parallel"

@@ -9,7 +9,7 @@ DESCRIPTION="An adaptive GTK+ theme based on Material Design Guidelines"
 HOMEPAGE="https://github.com/adapta-project/adapta-gtk-theme"
 SRC_URI="https://github.com/adapta-project/adapta-gtk-theme/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
-LICENSE="CC-BY-SA-4.0"
+LICENSE="GPL-2 CC-BY-SA-4.0"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~arm"
 IUSE="gnome gnome-flashback cinnamon xfce mate openbox plank telegram gtk-next gtk-legacy chrome-legacy +parallel"
