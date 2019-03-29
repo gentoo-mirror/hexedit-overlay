@@ -1,0 +1,13 @@
+DEFINED_PHASES=install postinst prerm setup
+DEPEND=|| ( virtual/httpd-cgi virtual/httpd-fastcgi ) >=app-admin/webapp-config-1.50.15
+DESCRIPTION=A friendly web-based DNS administration tool for PowerDNS
+EAPI=2
+HOMEPAGE=http://www.poweradmin.org
+IUSE=mysql postgres vhosts vhosts
+KEYWORDS=~alpha amd64 ~hppa ~ia64 ~m68k ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~sparc-fbsd x86 ~x86-fbsd
+LICENSE=GPL-3
+RDEPEND=dev-lang/php[session,postgres?,crypt] mysql? ( || ( dev-php/PEAR-MDB2[mysql] dev-php/PEAR-MDB2[mysqli] ) ) mysql? ( || ( dev-lang/php[mysql] dev-lang/php[mysqli] ) ) postgres? ( dev-php/PEAR-MDB2[postgres] ) sys-devel/gettext >=app-admin/webapp-config-1.50.15
+SLOT=2.1.7-r2
+SRC_URI=http://sourceforge.net/projects/poweradmin/files/poweradmin-2.1.7.tgz
+_eclasses_=desktop	b1d22ac8bdd4679ab79c71aca235009d	epatch	a1bf4756dba418a7238f3be0cb010c54	estack	43ddf5aaffa7a8d0482df54d25a66a1f	eutils	6e6c2737b59a4b982de6fb3ecefd87f8	ltprune	2729691420b6deeda2a90b1f1183fb55	multilib	b2f01ad412baf81650c23fcf0975fa33	preserve-libs	ef207dc62baddfddfd39a164d9797648	toolchain-funcs	b45201c4e6c096b98e250336954e64b9	vcs-clean	2a0f74a496fa2b1552c4f3398258b7bf	webapp	16783e418aca3ffa461d68310bf7ab12
+_md5_=ba3dbf207e143f80ee4b01699c65da0f

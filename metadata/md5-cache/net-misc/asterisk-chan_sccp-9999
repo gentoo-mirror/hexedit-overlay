@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile configure install postinst preinst prepare unpack
+DEPEND=>=net-misc/asterisk-1.2 >=sys-devel/autoconf-2.6.0 >=sys-devel/automake-1.10 >=sys-devel/libtool-2.2.2 >=sys-devel/m4-1.4.5 || ( dev-vcs/subversion[http] dev-vcs/subversion[webdav-neon] dev-vcs/subversion[webdav-serf] ) net-misc/rsync
+DESCRIPTION=SCCP channel plugin for the Asterisk soft PBX
+EAPI=2
+HOMEPAGE=http://chan-sccp-b.sourceforge.net
+IUSE=+pickup +park +dirtrfr +monitor conference +manager +functions indications +realtime video advanced-functions dynamic-config dynamic-speeddial debug static
+LICENSE=GPL-2
+RDEPEND=>=net-misc/asterisk-1.2 >=sys-devel/autoconf-2.6.0 >=sys-devel/automake-1.10 >=sys-devel/libtool-2.2.2 >=sys-devel/m4-1.4.5
+SLOT=0
+_eclasses_=desktop	b1d22ac8bdd4679ab79c71aca235009d	epatch	a1bf4756dba418a7238f3be0cb010c54	estack	43ddf5aaffa7a8d0482df54d25a66a1f	eutils	6e6c2737b59a4b982de6fb3ecefd87f8	ltprune	2729691420b6deeda2a90b1f1183fb55	multilib	b2f01ad412baf81650c23fcf0975fa33	preserve-libs	ef207dc62baddfddfd39a164d9797648	subversion	3d1eb4b41d7190570a84f786958ebb13	toolchain-funcs	b45201c4e6c096b98e250336954e64b9	vcs-clean	2a0f74a496fa2b1552c4f3398258b7bf
+_md5_=bbbcb530cc5f7e617c9160af7c0d0791
