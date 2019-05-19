@@ -6,7 +6,7 @@ EAPI=7
 inherit desktop udev
 
 MY_PV=$(ver_rs 3- '_')
-MY_P="st-stm32cubeide_${MY_PV}_${ARCH}"
+MY_P="st-stm32cubeide_${MY_PV}_amd64"
 
 DESCRIPTION="Free all-in-one STM32 development tool"
 HOMEPAGE="https://www.st.com/content/st_com/en/products/development-tools/software-development-tools/stm32-software-development-tools/stm32-ides/stm32cubeide.html"
@@ -52,7 +52,7 @@ src_unpack()
 
 	if use stlink; then
 		extract_sh "$T/$MY_P"/st-stlink-udev-rules-*-linux-noarch.sh "$T/stlink" && \
-			extract_sh "$T/$MY_P"/st-stlink-server.*-linux-$ARCH.install.sh "$T/stlink" && \
+			extract_sh "$T/$MY_P"/st-stlink-server.*-linux-amd64.install.sh "$T/stlink" && \
 			mkdir -p "$S/stlink" && \
 			mv "$T/stlink/stlink-server" "$S/stlink" && \
 			tar xf "$T/stlink"/st-stlink-udev-rules-*-linux-all.tar.gz -C "$T/stlink" && \
@@ -75,7 +75,7 @@ src_install()
 	mkdir -p "$dest" && \
 		tar xf "$S/$PN.tar.gz" -C "$dest" \
 		|| die "Failed to install"
-	make_desktop_entry "$dest/$PN" "STM32CubeIDE" "$dest/icon.xpm"
+	make_desktop_entry "/opt/$PN/$PN" "STM32CubeIDE" "/opt/$PN/icon.xpm"
 
 	if use stlink; then
 		tar xf "$S/stlink/stlink-udev-rules.tar.gz" -C "$D" \
