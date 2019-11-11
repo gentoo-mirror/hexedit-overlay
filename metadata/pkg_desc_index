@@ -1,5 +1,5 @@
 dev-db/pg-strom 1.9999: A custom-scan provider module for the PostgreSQL database.
-dev-embedded/stm32cubeide 1.0.1.3139.20190612.1256: Free all-in-one STM32 development tool
+dev-embedded/stm32cubeide 1.0.1.3139.20190612.1256 1.1.0.4551.20191014.1140: Free all-in-one STM32 development tool
 dev-lang/fasm 1.71.64: Flat Assembler
 net-analyzer/libzbxpgsql 0.2.1: A comprehensive PostgreSQL discovery and monitoring module for the Zabbix monitoring agent
 net-analyzer/zabbix-agent-extensions 0.3.1: Zabbix Agent extensions
