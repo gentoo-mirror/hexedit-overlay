@@ -2,13 +2,13 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI="2"
+EAPI="5"
 
 inherit webapp eutils
 
 DESCRIPTION="A friendly web-based DNS administration tool for PowerDNS"
 HOMEPAGE="http://www.poweradmin.org"
-SRC_URI="http://sourceforge.net/projects/poweradmin/files/poweradmin-${PV}.tgz"
+SRC_URI="https://github.com/poweradmin/poweradmin/archive/v${PV}.tar.gz -> poweradmin-${PV}.tgz"
 
 LICENSE="GPL-3"
 KEYWORDS="~alpha amd64 ~hppa ~ia64 ~m68k ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~sparc-fbsd x86 ~x86-fbsd"

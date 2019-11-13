@@ -18,7 +18,6 @@ IUSE="+pickup +park +dirtrfr +monitor conference +manager +functions indications
 
 DEPEND="
 	>=net-misc/asterisk-1.6.2
-	<net-misc/asterisk-11.0
 	>=sys-devel/autoconf-2.6.0
 	>=sys-devel/automake-1.10
 	>=sys-devel/libtool-2.2.2
