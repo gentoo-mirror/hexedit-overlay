@@ -4,17 +4,17 @@
 
 EAPI=5
 
-inherit git-r3
+MY_P="chan-sccp-${PV}"
 
 DESCRIPTION="SCCP channel plugin for the Asterisk soft PBX"
 HOMEPAGE="http://chan-sccp-b.sourceforge.net"
+SRC_URI="https://github.com/chan-sccp/chan-sccp/archive/v${PV}.tar.gz -> ${MY_P}.tar.gz"
+S="${WORKDIR}/${MY_P}"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS=""
-IUSE="+pickup +park +dirtrfr +monitor conference +manager +functions indications +realtime video advanced-functions dynamic-config dynamic-speeddial debug static"
-
-EGIT_REPO_URI="https://github.com/chan-sccp/chan-sccp.git"
+KEYWORDS="ppc x86 amd64"
+IUSE="+pickup +park +dirtrfr +monitor conference +manager +functions indications +realtime video advanced-config advanced-functions dynamic-config dynamic-speeddial debug static"
 
 DEPEND="
 	>=net-misc/asterisk-1.6.2
@@ -54,6 +54,7 @@ src_install() {
 	# install configs
 	einfo "Installing default config files..."
 	mkdir -p ${D}etc/asterisk
+	find ${S}/conf/ -name '.svn' -print0 | xargs -0 rm -rf # cleaning svn files
 	cp -rf ${S}/conf/* ${D}etc/asterisk
 
 	# fix permissions
