@@ -12,7 +12,7 @@ HOMEPAGE="http://chan-sccp-b.sourceforge.net"
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS=""
-IUSE="+pickup +park +dirtrfr +monitor conference +manager +functions indications +realtime video advanced-functions dynamic-config dynamic-speeddial debug static"
+IUSE="+pickup +park +dirtrfr +monitor conference +manager +functions indications +realtime video advanced-config advanced-functions dynamic-config dynamic-speeddial debug static"
 
 EGIT_REPO_URI="https://github.com/chan-sccp/chan-sccp.git"
 
