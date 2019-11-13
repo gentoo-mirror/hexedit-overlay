@@ -1,11 +1,10 @@
 DEFINED_PHASES=install
 DEPEND=amd64? ( app-emulation/emul-linux-x86-baselibs )
 DESCRIPTION=Flat Assembler
-EAPI=2
+EAPI=5
 HOMEPAGE=http://flatassembler.net/
 KEYWORDS=~x86 ~amd64
 LICENSE=fasm
-RDEPEND=amd64? ( app-emulation/emul-linux-x86-baselibs )
 SLOT=0
-SRC_URI=http://flatassembler.net/fasm-1.71.64.tgz
-_md5_=8998843080dba61cb6039d21c58d1498
+SRC_URI=http://flatassembler.net/fasm-1.73.17.tgz
+_md5_=5e288bbb53bd490ef418e180b5f4ac5f
