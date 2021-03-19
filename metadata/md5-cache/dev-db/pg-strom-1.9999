@@ -3,6 +3,7 @@ DEPEND=dev-db/postgresql:9.5[server] >=dev-util/nvidia-cuda-toolkit-7.0 >=dev-vc
 DESCRIPTION=A custom-scan provider module for the PostgreSQL database.
 EAPI=5
 HOMEPAGE=https://github.com/pg-strom/devel
+INHERIT=git-r3
 KEYWORDS=~amd64 ~x86
 LICENSE=GPL-2
 PROPERTIES=live

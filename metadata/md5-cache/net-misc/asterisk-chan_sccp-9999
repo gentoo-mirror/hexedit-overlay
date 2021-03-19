@@ -3,6 +3,7 @@ DEPEND=>=net-misc/asterisk-1.6.2 >=sys-devel/autoconf-2.6.0 >=sys-devel/automake
 DESCRIPTION=SCCP channel plugin for the Asterisk soft PBX
 EAPI=5
 HOMEPAGE=http://chan-sccp-b.sourceforge.net
+INHERIT=git-r3
 IUSE=+pickup +park +dirtrfr +monitor conference +manager +functions indications +realtime video advanced-config advanced-functions dynamic-config dynamic-speeddial debug static
 LICENSE=GPL-2
 PROPERTIES=live
